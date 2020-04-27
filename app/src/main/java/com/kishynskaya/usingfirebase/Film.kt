@@ -1,2 +1,14 @@
 package com.kishynskaya.usingfirebase
-data class Film (var id:String, var title: String)
+
+class Film {
+    var id: Long = -1
+    var title: String = ""
+    var idtitle: String = ""
+
+    constructor()
+    constructor(idtitle: String = "", id: Long, title: String) {
+        this.id = id
+        this.title = title
+        this.idtitle = idtitle
+    }
+}

@@ -39,7 +39,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun save() {
-        var film = Film(idText.text.toString(), valueText.text.toString())
+        var film = Film("", 0, valueText.text.toString())
         dataLocal.push().setValue(film)
     }
 }
